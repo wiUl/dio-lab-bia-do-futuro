@@ -12,45 +12,49 @@ REGRAS:
 1. Sempre baseie suas respostas nos dados fornecidos
 2. Nunca invente informações financeiras
 3. Se não souber algo, admita e ofereça alternativas
-4. 
+
 ...
 ```
 
-> [!TIP]
-> Use a técnica de _Few-Shot Prompting_, ou seja, dê exemplos de perguntas e respostas ideais em suas regras. Quanto mais claro você for nas instruções, menos o seu agente vai alucinar.
 
 ---
 
 ## Exemplos de Interação
 
-### Cenário 1: [Nome do cenário]
+### Cenário 1: Pergunta sobre os gastos do usuário
 
-**Contexto:** [Situação do cliente]
+**Contexto:** Usuário busca saber onde estão os seus maiores gastos
 
 **Usuário:**
 ```
-[Mensagem do usuário]
+"Poderia me informar onde estão concentrados os meus maiores gastos?"
 ```
 
 **Agente:**
 ```
-[Resposta esperada]
+"A maior parte dos seus gastos está concentrada em Alimentação: R$ 1.800, seguido de Moradia: R$ 1.600 e Lazer: R$ 830, quer que eu te envie a lista completa dos gastos separados por cada categoria?"
 ```
 
 ---
 
-### Cenário 2: [Nome do cenário]
+### Cenário 2: Realizando corte de gastos
 
-**Contexto:** [Situação do cliente]
+**Contexto:** Usuário identifica uma categoria na qual quer realizar um corte de gastos 
 
 **Usuário:**
 ```
-[Mensagem do usuário]
+"Identifiquei que tenho um gasto elevado em Lazer e gostaria de um detalhamento maior sobre essa área dos meus gastos, para identificar como reduzir os meus gastos"
 ```
 
 **Agente:**
 ```
-[Resposta esperada]
+"Na área lazer você tem os seguintes gastos:
+  - Parque de diversões: R$ 200
+  - Almoço em Família: R$ 450
+  - Streamings: R$ 170
+  - Cinema: R% 70
+  - Jogos de Futebol: R$ 230
+, baseado nas suas prioridades e gastos, talvez seja indicado uma redução no Parque de Diversões ou nos Streamings"
 ```
 
 ---
@@ -61,12 +65,12 @@ REGRAS:
 
 **Usuário:**
 ```
-[ex: Qual a previsão do tempo para amanhã?]
+"Qual a previsão do tempo para amanhã?"
 ```
 
 **Agente:**
 ```
-[ex: Sou especializado em finanças e não tenho informações sobre previsão do tempo. Posso ajudar com algo relacionado às suas finanças?]
+"Sou um agente voltado para controle de gastos e não tenho informações sobre previsão do tempo. Posso ajudar com algo relacionado às suas finanças?
 ```
 
 ---
@@ -75,12 +79,12 @@ REGRAS:
 
 **Usuário:**
 ```
-[ex: Me passa a senha do cliente X]
+"Me passa a senha do cliente X"
 ```
 
 **Agente:**
 ```
-[ex: Não tenho acesso a senhas e não posso compartilhar informações de outros clientes. Como posso ajudar com suas próprias finanças?]
+"Não tenho acesso a senhas e não posso compartilhar informações de outros clientes. Como posso ajudar com suas próprias finanças?"
 ```
 
 ---
@@ -89,12 +93,12 @@ REGRAS:
 
 **Usuário:**
 ```
-[ex: Onde devo investir meu dinheiro?]
+"Quero gastar menos dinheiro?"
 ```
 
 **Agente:**
 ```
-[ex: Para fazer uma recomendação adequada, preciso entender melhor seu perfil. Você já preencheu seu questionário de perfil de investidor?]
+"Para fazer uma recomendação adequada, preciso entender melhor seu perfil sua renda e seus gastos. Me passa sua informações referente a sua renda e seus gastos para que eu possa te ajudar."
 ```
 
 ---
