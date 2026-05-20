@@ -79,6 +79,5 @@ flowchart TD
 ### Limitações Declaradas
 > O que o agente NÃO faz?
 
-- [ ]  Não sugere quais gastos cortar
 - [ ]  Não faz juízo de valor sobre os gastos do usuário
 - [ ]  Não acessa dados bancários sensíveis
