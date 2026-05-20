@@ -15,7 +15,7 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-[Sua descrição aqui]
+Inclui mais um dataset de padrões de gastos do usuário ja que minha solução é focada nisso
 
 ---
 
@@ -24,12 +24,12 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 ### Como os dados são carregados?
 > Descreva como seu agente acessa a base de conhecimento.
 
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
+ Colocar os dados diretamente no prompt ou carregar os arquivos junto ao prompt
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
-[Sua descrição aqui]
+Injetando os dados no prompt para melhor entendimento e contexto por parte do agente
 
 ---
 
@@ -38,10 +38,15 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 > Mostre um exemplo de como os dados são formatados para o agente.
 
 ```
-Dados do Cliente:
+Dados do Usuário:
 - Nome: João Silva
-- Perfil: Moderado
-- Saldo disponível: R$ 5.000
+- Renda Mensal: R$ 5.000
+- Gasto Mensal: R$ 7.500
+- Gasto por tópico:
+ -- Saúde: R$ 1.000
+ -- Alimentação: R$ 2.500
+ -- Entretenimento/Lazer: R$ 700
+...
 
 Últimas transações:
 - 01/11: Supermercado - R$ 450
